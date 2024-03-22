@@ -1,0 +1,33 @@
+Passo a Passo para criação de um banco de dados no MySQL
+
+1. Defina o nome da tabela, e depois use o script: CREATE SCHEMA `db_agenda` ;
+
+**Não se esqueça de trocar o nome de sua tabela**
+
+2. Selecione o banco de dados usando: USE db_agenda;
+
+3. Crie uma tabela no banco de dados: 
+	
+create table tb_contato (
+	id_contato integer primary key,
+    	nome_contato varchar(30),
+    	telefone_contato varchar(14),
+    	email_contato varchar(30)
+)
+
+**
+A Tabela Agenda tem os seguintes valores:
+	-> Identificação de contato;
+	-> Nome do contato;
+	-> Telefone do contato;
+	-> E-mail do contato.
+
+A tabela pode receber mais colunas, dependendo do projeto. Por exemplo:
+	-> Endereço;
+	-> Idade.
+
+**
+
+4. Para deletar uma determinada linha em uma tabela, basta você usar o script:
+
+delete from tb_contatos + where id_contato = [numero do id]
